@@ -1,0 +1,15 @@
+{
+  "name": "5-asincronismo",
+  "version": "1.0.0",
+  "description": "codigos de ejemplo de asincronismo en JS",
+  "main": "/src/index.js",
+  "scripts": {
+    "callback": "node src/callbacks/index.js"
+  },
+  "keywords": [
+    "callbacks",
+    "promise"
+  ],
+  "author": "IR",
+  "license": "ISC"
+}
