@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Examples</title>
+    <style>
+        .box1{
+            background-color: salmon;
+            width: 400px;
+            height: 400px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            align-items: center;
+
+        }
+        .hitem{
+            background-color: white;
+            width: 50px;
+            height: 50px;
+            margin: 1%;
+            text-align: center;
+        }
+
+        .box1 .hitem:nth-child(1){
+            background-color: green;
+            grid-column: 1 / 2;
+        }
+
+        .box1 .hitem:nth-child(2){
+            background-color: rgb(35, 209, 35);
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+        .box1 .hitem:nth-child(3){
+            background-color: rgb(8, 238, 123);
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+        .box1 .hitem:nth-child(4){
+            background-color: rgb(170, 255, 144);
+            grid-column: 4 / 5;
+            grid-row: 4 / 5;
+        }
+        .box1 .hitem:nth-child(5){
+            background-color: rgb(238, 247, 125);
+            grid-column: 5 / 6;
+            grid-row: 5 / 6;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="hitem">1</div>
+        <div class="hitem">2</div>
+        <div class="hitem">3</div>
+        <div class="hitem">4</div>
+        <div class="hitem">5</div>
+
+    </div>
+
+    <div class="box2">
+        <div class="vitem">1</div>
+        <div class="vitem">2</div>
+        <div class="vitem">3</div>
+        <div class="vitem">4</div>
+        <div class="vitem">5</div>
+
+    </div>
+    
+</body>
+</html>

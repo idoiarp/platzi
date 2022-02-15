@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Examples</title>
+    <style>
+        .box1{
+            background-color: salmon;
+            width: 100%;
+            height: 100%;
+            padding: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hitem{
+            background-color: CornflowerBlue;
+            width: 50px;
+            height: 50px;
+            margin: 1%;
+            text-align: center;
+        }
+
+        .box1 .hitem:nth-child(2n+1){
+            background-color: SpringGreen;
+        }
+        .box2{
+            background-color: Khaki;
+            width: 100%;
+            height: 100%;
+            padding: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .vitem{
+            background-color: cyan;
+            width: 50px;
+            height: 50px;
+            margin: 1%;
+            text-align: center;
+        }
+
+        .box2 .vitem:nth-child(2n+1){
+            background-color: Plum;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="hitem">1</div>
+        <div class="hitem">2</div>
+        <div class="hitem">3</div>
+        <div class="hitem">4</div>
+        <div class="hitem">5</div>
+
+    </div>
+
+    <div class="box2">
+        <div class="vitem">1</div>
+        <div class="vitem">2</div>
+        <div class="vitem">3</div>
+        <div class="vitem">4</div>
+        <div class="vitem">5</div>
+
+    </div>
+    
+</body>
+</html>
