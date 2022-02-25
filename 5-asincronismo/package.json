@@ -4,12 +4,21 @@
   "description": "codigos de ejemplo de asincronismo en JS",
   "main": "/src/index.js",
   "scripts": {
-    "callback": "node src/callbacks/index.js"
+    "callback": "node src/callbacks/index.js",
+    "callback:challenge": "node src/callbacks/challenge.js",
+    "promise": "node src/promises/index.js",
+    "promise1": "node src/promises/promise.js",
+    "promise:challenge": "node src/promises/challenge.js",
+    "async": "node src/async/index.js",
+    "async:challenge": "node src/async/challenge.js"
   },
   "keywords": [
     "callbacks",
     "promise"
   ],
   "author": "IR",
-  "license": "ISC"
+  "license": "MIT",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
 }
